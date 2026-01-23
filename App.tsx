@@ -8,6 +8,7 @@ import {
   PrivacyPolicyPage,
   TermsOfServicePage,
   ContactPage,
+  DeleteAccountPage,
 } from "./pages/StaticPages";
 
 type Theme = "light" | "dark";
@@ -79,6 +80,7 @@ const App: React.FC = () => {
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/terms-of-service" element={<TermsOfServicePage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/delete-account" element={<DeleteAccountPage />} />
           </Routes>
         </main>
         <Footer />

@@ -89,3 +89,76 @@ export const ContactPage: React.FC = () => (
     </div>
   </StaticPageLayout>
 );
+
+export const DeleteAccountPage: React.FC = () => (
+  <StaticPageLayout title="Delete Your Account">
+    <p>Last updated: {new Date().toLocaleDateString()}</p>
+    <p>
+      At <strong>Xs</strong> (operated by Xs Technologies Inc.), we respect your right to control your personal data. This page explains how you can delete your account and what happens to your data when you do.
+    </p>
+    
+    <h2>How to Delete Your Account</h2>
+    <p>
+      You can delete your Xs account in two ways:
+    </p>
+    <ul>
+      <li>
+        <strong>Within the App:</strong> Open the Xs mobile application, navigate to Settings, and select "Delete Account". Follow the prompts to confirm your deletion request.
+      </li>
+      <li>
+        <strong>Via Email:</strong> Send a deletion request to <a href="mailto:support@xs-parking.app" className="text-brand-accent hover:underline">support@xs-parking.app</a> from the email address associated with your account. Include "Account Deletion Request" in the subject line and your account email address in the body.
+      </li>
+    </ul>
+    <p>
+      Once you submit a deletion request, we will process it within 30 days. You will receive a confirmation email when your account has been deleted.
+    </p>
+
+    <h2>What Data is Deleted</h2>
+    <p>
+      When you delete your Xs account, we will permanently delete the following information:
+    </p>
+    <ul>
+      <li>Your account profile information (name, email address, phone number)</li>
+      <li>Your saved payment methods and payment preferences</li>
+      <li>Your booking history and reservation details</li>
+      <li>Your location preferences and saved parking locations</li>
+      <li>Your app settings and preferences</li>
+      <li>Any other personal data associated with your account</li>
+    </ul>
+
+    <h2>Data Retention Period</h2>
+    <p>
+      Please note that certain information may be retained for legal and regulatory purposes:
+    </p>
+    <ul>
+      <li>
+        <strong>Payment Records:</strong> Transaction records, payment receipts, and financial data related to completed bookings are retained for a period of 7 years as required by tax and financial regulations. This includes anonymized transaction data that cannot be linked back to your personal account.
+      </li>
+      <li>
+        <strong>Legal Obligations:</strong> We may retain certain information if required by law, court order, or to resolve disputes, prevent fraud, or enforce our Terms of Service.
+      </li>
+      <li>
+        <strong>Aggregated Data:</strong> We may retain anonymized, aggregated data that cannot identify you personally. This data is used for analytics and service improvement purposes.
+      </li>
+    </ul>
+    <p>
+      After the retention period expires, all retained data will be permanently deleted from our systems.
+    </p>
+
+    <h2>Important Considerations</h2>
+    <p>
+      Before deleting your account, please be aware that:
+    </p>
+    <ul>
+      <li>You will lose access to all your booking history and receipts</li>
+      <li>Any active or upcoming bookings may be affected</li>
+      <li>You will need to create a new account if you wish to use Xs again in the future</li>
+      <li>This action cannot be undone once completed</li>
+    </ul>
+
+    <h2>Questions or Concerns</h2>
+    <p>
+      If you have any questions about account deletion or need assistance with the process, please contact us at <a href="mailto:support@xs-parking.app" className="text-brand-accent hover:underline">support@xs-parking.app</a>. We're here to help.
+    </p>
+  </StaticPageLayout>
+);
