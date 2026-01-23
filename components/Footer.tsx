@@ -74,6 +74,14 @@ const Footer: React.FC = () => {
                   Contact Us
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/delete-account"
+                  className="text-base text-brand-secondary hover:text-white"
+                >
+                  Delete Account
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
