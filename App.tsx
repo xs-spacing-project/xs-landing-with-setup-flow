@@ -6,6 +6,7 @@ import LandingPage from "./pages/LandingPage";
 import SetupParkingPage from "./pages/SetupParkingPage";
 import {
   PrivacyPolicyPage,
+  PrivacyPolicyDetailedPage,
   TermsOfServicePage,
   TermsOfUsePage,
   ContactPage,
@@ -79,6 +80,7 @@ const App: React.FC = () => {
             <Route path="/" element={<LandingPage />} />
             <Route path="/setup-parking" element={<SetupParkingPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="/privacy-policy-detailed" element={<PrivacyPolicyDetailedPage />} />
             <Route path="/terms-of-service" element={<TermsOfServicePage />} />
             <Route path="/terms-of-use" element={<TermsOfUsePage />} />
             <Route path="/contact" element={<ContactPage />} />
