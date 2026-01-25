@@ -7,6 +7,7 @@ import SetupParkingPage from "./pages/SetupParkingPage";
 import {
   PrivacyPolicyPage,
   TermsOfServicePage,
+  TermsOfUsePage,
   ContactPage,
   DeleteAccountPage,
 } from "./pages/StaticPages";
@@ -79,6 +80,7 @@ const App: React.FC = () => {
             <Route path="/setup-parking" element={<SetupParkingPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+            <Route path="/terms-of-use" element={<TermsOfUsePage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/delete-account" element={<DeleteAccountPage />} />
           </Routes>
