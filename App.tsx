@@ -11,6 +11,7 @@ import {
   TermsOfUsePage,
   ContactPage,
   DeleteAccountPage,
+  RefundAndCancellationPolicyPage,
 } from "./pages/StaticPages";
 
 type Theme = "light" | "dark";
@@ -81,6 +82,7 @@ const App: React.FC = () => {
             <Route path="/setup-parking" element={<SetupParkingPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/privacy-policy-detailed" element={<PrivacyPolicyDetailedPage />} />
+            <Route path="/refund-and-cancellation-policy" element={<RefundAndCancellationPolicyPage />} />
             <Route path="/terms-of-service" element={<TermsOfServicePage />} />
             <Route path="/terms-of-use" element={<TermsOfUsePage />} />
             <Route path="/contact" element={<ContactPage />} />
