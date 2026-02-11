@@ -78,9 +78,12 @@ const HeroSection: React.FC = () => {
           variants={itemVariants}
           className="mt-8 flex flex-col sm:flex-row justify-center gap-4"
         >
-          <button className="bg-brand-accent hover:bg-brand-accent-hover text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 w-full sm:w-auto">
+          <Link
+            to="/download"
+            className="inline-block bg-brand-accent hover:bg-brand-accent-hover text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 w-full sm:w-auto"
+          >
             Download the App
-          </button>
+          </Link>
           <Link
             to="/setup-parking"
             className="inline-block bg-black/10 dark:bg-white/10 backdrop-blur-sm border border-brand-secondary/30 text-brand-dark dark:text-brand-light font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 w-full sm:w-auto"
