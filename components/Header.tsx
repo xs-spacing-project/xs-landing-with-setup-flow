@@ -148,10 +148,13 @@ const Header: React.FC<HeaderProps> = ({ isLandingPage }) => {
               </button>
             )}
 
-            <button className="flex items-center sm:space-x-2 bg-brand-accent hover:bg-brand-accent-hover text-white text-sm font-semibold p-2 sm:px-4 sm:py-1.5 rounded-full transition-colors">
+            <Link
+              to="/download"
+              className="flex items-center sm:space-x-2 bg-brand-accent hover:bg-brand-accent-hover text-white text-sm font-semibold p-2 sm:px-4 sm:py-1.5 rounded-full transition-colors"
+            >
               <Download size={16} />
               <span className="hidden sm:inline">Download</span>
-            </button>
+            </Link>
           </div>
         </div>
       </motion.header>
