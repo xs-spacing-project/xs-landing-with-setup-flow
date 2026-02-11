@@ -1,3 +1,5 @@
+export const APP_STORE_URL = "https://apps.apple.com/app/YOUR_APP_ID";
+export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME";
 
 export const NAV_LINKS = [
   { href: '#features', label: 'Features' },

@@ -13,6 +13,7 @@ import {
   DeleteAccountPage,
   RefundAndCancellationPolicyPage,
 } from "./pages/StaticPages";
+import DownloadPage from "./pages/DownloadPage";
 
 type Theme = "light" | "dark";
 
@@ -79,6 +80,7 @@ const App: React.FC = () => {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/download" element={<DownloadPage />} />
             <Route path="/setup-parking" element={<SetupParkingPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/privacy-policy-detailed" element={<PrivacyPolicyDetailedPage />} />
