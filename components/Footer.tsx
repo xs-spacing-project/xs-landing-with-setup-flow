@@ -143,7 +143,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 text-center">
           <p className="text-base text-brand-secondary">
-            &copy; {new Date().getFullYear()} Xs Technologies Inc. All rights
+            &copy; {new Date().getFullYear()} Xs One Solution Private Limited. All rights
             reserved.
           </p>
         </div>

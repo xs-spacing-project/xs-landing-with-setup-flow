@@ -31,7 +31,7 @@ export const PrivacyPolicyPage: React.FC = () => (
   <StaticPageLayout title="Privacy Policy">
     <p>Last updated: {new Date().toLocaleDateString()}</p>
     <p>
-      Xs Technologies Inc. ("us", "we", or "our") operates the Xs mobile application (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
+      Xs One Solution Private Limited ("us", "we", or "our") operates the Xs mobile application (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
     </p>
     <h2>Information Collection and Use</h2>
     <p>
@@ -52,7 +52,7 @@ export const TermsOfServicePage: React.FC = () => (
   <StaticPageLayout title="Terms of Service">
     <p>Last updated: {new Date().toLocaleDateString()}</p>
     <p>
-      Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the Xs mobile application (the "Service") operated by Xs Technologies Inc. ("us", "we", or "our").
+      Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the Xs mobile application (the "Service") operated by Xs One Solution Private Limited ("us", "we", or "our").
     </p>
     <h2>Bookings</h2>
     <p>
@@ -64,7 +64,7 @@ export const TermsOfServicePage: React.FC = () => (
     </p>
     <h2>Limitation of Liability</h2>
     <p>
-      In no event shall Xs Technologies Inc., nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.
+      In no event shall Xs One Solution Private Limited, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.
     </p>
   </StaticPageLayout>
 );
@@ -84,7 +84,7 @@ export const ContactPage: React.FC = () => (
         </div>
         <div>
             <h2 className="text-2xl">Corporate Office</h2>
-            <p>123 Dharma Lane, Moksha City, Bharat 10001</p>
+            <p>B-35 Ansal Town, Rewari, Haryana, Pin code 123401, India</p>
         </div>
     </div>
   </StaticPageLayout>
@@ -94,7 +94,7 @@ export const DeleteAccountPage: React.FC = () => (
   <StaticPageLayout title="Delete Your Account">
     <p>Last updated: {new Date().toLocaleDateString()}</p>
     <p>
-      At <strong>Xs</strong> (operated by Xs Technologies Inc.), we respect your right to control your personal data. This page explains how you can delete your account and what happens to your data when you do.
+      At <strong>Xs</strong> (operated by Xs One Solution Private Limited), we respect your right to control your personal data. This page explains how you can delete your account and what happens to your data when you do.
     </p>
     
     <h2>How to Delete Your Account</h2>
@@ -176,7 +176,7 @@ export const TermsOfUsePage: React.FC = () => (
     </p>
     
     <p>
-      The Platform is owned by 8950066821, a company incorporated under the Companies Act, 1956 with its registered office at B-35 Ansal Town, Rewari, Haryana, Pin code 123401 (hereinafter referred to as 'Platform Owner', 'we', 'us', 'our').
+      The Platform is owned by Xs One Solution Private Limited, a company incorporated under the Companies Act, 1956 with its registered office at B-35 Ansal Town, Rewari, Haryana, Pin code 123401 (hereinafter referred to as 'Platform Owner', 'we', 'us', 'our').
     </p>
     
     <p>
@@ -275,12 +275,12 @@ export const PrivacyPolicyDetailedPage: React.FC = () => (
     <div>
       <h2>Introduction</h2>
       <p>
-        This Privacy Policy describes how 8950066821 and its affiliates (collectively "8950066821, we, our, us") collect, use, share, protect or otherwise process your information/ personal data through our website <a href="https://xs-parking.com/" className="text-brand-accent hover:underline">https://xs-parking.com/</a> (hereinafter referred to as Platform). Please note that you may be able to browse certain sections of the Platform without registering with us.We do not offer any product/service under this Platform outside India and your personal data will primarily be stored and processed in India. By visiting this Platform, providing your information or availing any product/service offered on the Platform, you expressly agree to be bound by the terms and conditions of this Privacy Policy, the Terms of Use and the applicable service/product terms and conditions, and agree to be governed by the laws of India including but not limited to the laws applicable to data protection and privacy. If you do not agree please do not use or access our Platform.
+        This Privacy Policy describes how Xs One Solution Private Limited and its affiliates (collectively "Xs One Solution Private Limited, we, our, us") collect, use, share, protect or otherwise process your information/ personal data through our website <a href="https://xs-parking.com/" className="text-brand-accent hover:underline">https://xs-parking.com/</a> (hereinafter referred to as Platform). Please note that you may be able to browse certain sections of the Platform without registering with us.We do not offer any product/service under this Platform outside India and your personal data will primarily be stored and processed in India. By visiting this Platform, providing your information or availing any product/service offered on the Platform, you expressly agree to be bound by the terms and conditions of this Privacy Policy, the Terms of Use and the applicable service/product terms and conditions, and agree to be governed by the laws of India including but not limited to the laws applicable to data protection and privacy. If you do not agree please do not use or access our Platform.
       </p>
 
       <h2>Collection</h2>
       <p>
-        We collect your personal data when you use our Platform, services or otherwise interact with us during the course of our relationship.and related information provided from time to time. Some of the information that we may collect includes but is not limited to personal data / information provided to us during sign-up/registering or using our Platform such as name, date of birth, address, telephone/mobile number, email IDand/or any such information shared as proof of identity or address. Some of the sensitive personal data may be collected with your consent, such as your bank account or credit or debit card or other payment instrument information or biometric information such as your facial features or physiological information (in order to enable use of certain features when opted for, available on the Platform) etc all of the above being in accordance with applicable law(s) You always have the option to not provide information, by choosing not to use a particular service or feature on the Platform. We may track your behaviour, preferences, and other information that you choose to provide on our Platform. This information is compiled and analysed on an aggregated basis. We will also collect your information related to your transactions on Platform and such third-party business partner platforms. When such a third-party business partner collects your personal data directly from you, you will be governed by their privacy policies. We shall not be responsible for the third-party business partner's privacy practices or the content of their privacy policies, and we request you to read their privacy policies prior to disclosing any information. If you receive an email, a call from a person/association claiming to be 8950066821 seeking any personal data like debit/credit card PIN, net-banking or mobile banking password, we request you to never provide such information. If you have already revealed such information, report it immediately to an appropriate law enforcement agency.
+        We collect your personal data when you use our Platform, services or otherwise interact with us during the course of our relationship.and related information provided from time to time. Some of the information that we may collect includes but is not limited to personal data / information provided to us during sign-up/registering or using our Platform such as name, date of birth, address, telephone/mobile number, email IDand/or any such information shared as proof of identity or address. Some of the sensitive personal data may be collected with your consent, such as your bank account or credit or debit card or other payment instrument information or biometric information such as your facial features or physiological information (in order to enable use of certain features when opted for, available on the Platform) etc all of the above being in accordance with applicable law(s) You always have the option to not provide information, by choosing not to use a particular service or feature on the Platform. We may track your behaviour, preferences, and other information that you choose to provide on our Platform. This information is compiled and analysed on an aggregated basis. We will also collect your information related to your transactions on Platform and such third-party business partner platforms. When such a third-party business partner collects your personal data directly from you, you will be governed by their privacy policies. We shall not be responsible for the third-party business partner's privacy practices or the content of their privacy policies, and we request you to read their privacy policies prior to disclosing any information. If you receive an email, a call from a person/association claiming to be Xs One Solution Private Limited seeking any personal data like debit/credit card PIN, net-banking or mobile banking password, we request you to never provide such information. If you have already revealed such information, report it immediately to an appropriate law enforcement agency.
       </p>
 
       <h2>Usage</h2>
@@ -320,12 +320,12 @@ export const PrivacyPolicyDetailedPage: React.FC = () => (
 
       <h2>Grievance Officer</h2>
       <div className="mt-4 space-y-2">
-        <p><strong>Insert Name of the Office:</strong></p>
-        <p><strong>Designation:</strong></p>
-        <p><strong>Insert Name and Address of the Company:</strong></p>
-        <p><strong>Contact us:</strong></p>
-        <p><strong>Phone:</strong></p>
-        <p><strong>Time:</strong> Monday - Friday(9:00 - 18:00)</p>
+        <p><strong>Name:</strong> Grievance Officer, Xs One Solution Private Limited</p>
+        <p><strong>Designation:</strong> Grievance Officer</p>
+        <p><strong>Company:</strong> Xs One Solution Private Limited</p>
+        <p><strong>Registered Office:</strong> B-35 Ansal Town, Rewari, Haryana, Pin code 123401, India</p>
+        <p><strong>Contact us:</strong> <a href="mailto:support@xs-parking.app" className="text-brand-accent hover:underline">support@xs-parking.app</a></p>
+        <p><strong>Time:</strong> Monday - Friday (9:00 - 18:00)</p>
       </div>
     </div>
   </StaticPageLayout>
@@ -335,27 +335,31 @@ export const RefundAndCancellationPolicyPage: React.FC = () => (
   <StaticPageLayout title="Refund and Cancellation Policy">
     <div>
       <p>
-        This refund and cancellation policy outlines how you can cancel or seek a refund for a product / service that you have purchased through the Platform. Under this policy:
+        This refund and cancellation policy outlines how you can cancel or seek a refund for a parking booking made through the Platform. Under this policy:
       </p>
       
       <p>
-        Cancellations will only be considered if the request is made 12 days of placing the order. However, cancellation requests may not be entertained if the orders have been communicated to such sellers / merchant(s) listed on the Platform and they have initiated the process of shipping them, or the product is out for delivery. In such an event, you may choose to reject the product at the doorstep.
+        Cancellations will only be considered if the request is made within 12 hours of placing the booking, provided the parking session has not yet commenced. Once a parking session has started, cancellation requests will not be entertained.
       </p>
       
       <p>
-        8950066821 does not accept cancellation requests for perishable items like flowers, eatables, etc. However, the refund / replacement can be made if the user establishes that the quality of the product delivered is not good.
+        Xs One Solution Private Limited does not accept cancellation requests for bookings where the user has already entered the parking facility. However, a refund or credit may be issued if the parking facility was unavailable or if there was a verified technical error on our Platform.
       </p>
       
       <p>
-        In case of receipt of damaged or defective items, please report to our customer service team. The request would be entertained once the seller/ merchant listed on the Platform, has checked and determined the same at its own end. This should be reported within 12 days of receipt of products. In case you feel that the product received is not as shown on the site or as per your expectations, you must bring it to the notice of our customer service within 12 days of receiving the product. The customer service team after looking into your complaint will take an appropriate decision.
+        In case of a technical failure, overbooking, or inability to access a confirmed parking slot, please report the issue to our customer service team within 12 hours of the incident. The request will be reviewed and a decision communicated within 3 business days.
       </p>
       
       <p>
-        In case of complaints regarding the products that come with a warranty from the manufacturers, please refer the issue to them.
+        If you believe your booking was charged incorrectly or you were billed for a session you did not use, please contact our customer service within 12 hours of the scheduled booking time with relevant details.
       </p>
       
       <p>
-        In case of any refunds approved by 8950066821, it will take 12 days for the refund to be processed to you.
+        In case of complaints regarding payment failures or double charges, please refer to your payment provider's dispute resolution process in addition to contacting us.
+      </p>
+      
+      <p>
+        In case of any refunds approved by Xs One Solution Private Limited, it will take up to 12 business days for the refund to be processed back to your original payment method.
       </p>
     </div>
   </StaticPageLayout>
