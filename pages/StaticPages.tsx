@@ -75,12 +75,12 @@ export const ContactPage: React.FC = () => (
     <div className="mt-8 space-y-4">
         <div>
             <h2 className="text-2xl">Email Support</h2>
-            <a href="mailto:support@xs-parking.app" className="text-brand-accent hover:underline">support@xs-parking.app</a>
+            <a href="mailto:Xs.inquiry@gmail.com" className="text-brand-accent hover:underline">Xs.inquiry@gmail.com</a>
             <p>We aim to respond to all queries within 24 hours.</p>
         </div>
         <div>
             <h2 className="text-2xl">Press Inquiries</h2>
-            <a href="mailto:press@xs-parking.app" className="text-brand-accent hover:underline">press@xs-parking.app</a>
+            <a href="mailto:Xs.inquiry@gmail.com" className="text-brand-accent hover:underline">Xs.inquiry@gmail.com</a>
         </div>
         <div>
             <h2 className="text-2xl">Corporate Office</h2>
@@ -106,7 +106,7 @@ export const DeleteAccountPage: React.FC = () => (
         <strong>Within the App:</strong> Open the Xs mobile application, navigate to Settings, and select "Delete Account". Follow the prompts to confirm your deletion request.
       </li>
       <li>
-        <strong>Via Email:</strong> Send a deletion request to <a href="mailto:support@xs-parking.app" className="text-brand-accent hover:underline">support@xs-parking.app</a> from the email address associated with your account. Include "Account Deletion Request" in the subject line and your account email address in the body.
+        <strong>Via Email:</strong> Send a deletion request to <a href="mailto:Xs.inquiry@gmail.com" className="text-brand-accent hover:underline">Xs.inquiry@gmail.com</a> from the email address associated with your account. Include "Account Deletion Request" in the subject line and your account email address in the body.
       </li>
     </ul>
     <p>
@@ -158,7 +158,7 @@ export const DeleteAccountPage: React.FC = () => (
 
     <h2>Questions or Concerns</h2>
     <p>
-      If you have any questions about account deletion or need assistance with the process, please contact us at <a href="mailto:support@xs-parking.app" className="text-brand-accent hover:underline">support@xs-parking.app</a>. We're here to help.
+      If you have any questions about account deletion or need assistance with the process, please contact us at <a href="mailto:Xs.inquiry@gmail.com" className="text-brand-accent hover:underline">Xs.inquiry@gmail.com</a>. We're here to help.
     </p>
   </StaticPageLayout>
 );
@@ -324,7 +324,7 @@ export const PrivacyPolicyDetailedPage: React.FC = () => (
         <p><strong>Designation:</strong> Grievance Officer</p>
         <p><strong>Company:</strong> Xs One Solution Private Limited</p>
         <p><strong>Registered Office:</strong> B-35 Ansal Town, Rewari, Haryana, Pin code 123401, India</p>
-        <p><strong>Contact us:</strong> <a href="mailto:support@xs-parking.app" className="text-brand-accent hover:underline">support@xs-parking.app</a></p>
+        <p><strong>Contact us:</strong> <a href="mailto:Xs.inquiry@gmail.com" className="text-brand-accent hover:underline">Xs.inquiry@gmail.com</a></p>
         <p><strong>Time:</strong> Monday - Friday (9:00 - 18:00)</p>
       </div>
     </div>
