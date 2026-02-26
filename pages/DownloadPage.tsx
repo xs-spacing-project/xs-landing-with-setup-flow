@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ANDROID_DEEP_LINK_URL, APP_STORE_URL, PLAY_STORE_URL } from "../constants";
+import {
+  ANDROID_DEEP_LINK_URL,
+  APP_STORE_URL,
+  PLAY_STORE_APP_URL,
+  PLAY_STORE_URL,
+} from "../constants";
 
 type Platform = "ios" | "android" | "desktop";
 
@@ -30,11 +35,18 @@ const DownloadPage: React.FC = () => {
     if (platform === "desktop") return;
 
     let fallbackTimer: number | null = null;
+    let webFallbackTimer: number | null = null;
 
     const onVisibilityChange = () => {
-      if (document.hidden && fallbackTimer !== null) {
-        window.clearTimeout(fallbackTimer);
-        fallbackTimer = null;
+      if (document.hidden) {
+        if (fallbackTimer !== null) {
+          window.clearTimeout(fallbackTimer);
+          fallbackTimer = null;
+        }
+        if (webFallbackTimer !== null) {
+          window.clearTimeout(webFallbackTimer);
+          webFallbackTimer = null;
+        }
         document.removeEventListener("visibilitychange", onVisibilityChange);
       }
     };
@@ -47,10 +59,16 @@ const DownloadPage: React.FC = () => {
 
       fallbackTimer = window.setTimeout(() => {
         if (!document.hidden) {
-          window.location.href = PLAY_STORE_URL;
+          window.location.href = PLAY_STORE_APP_URL;
+          webFallbackTimer = window.setTimeout(() => {
+            if (!document.hidden) {
+              window.location.href = PLAY_STORE_URL;
+            }
+            webFallbackTimer = null;
+            document.removeEventListener("visibilitychange", onVisibilityChange);
+          }, 1200);
         }
         fallbackTimer = null;
-        document.removeEventListener("visibilitychange", onVisibilityChange);
       }, 1500);
 
       document.addEventListener("visibilitychange", onVisibilityChange);
@@ -61,6 +79,9 @@ const DownloadPage: React.FC = () => {
       window.clearTimeout(redirectTimer);
       if (fallbackTimer !== null) {
         window.clearTimeout(fallbackTimer);
+      }
+      if (webFallbackTimer !== null) {
+        window.clearTimeout(webFallbackTimer);
       }
       document.removeEventListener("visibilitychange", onVisibilityChange);
     };

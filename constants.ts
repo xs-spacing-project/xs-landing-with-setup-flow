@@ -1,5 +1,6 @@
 export const APP_STORE_URL = "https://apps.apple.com/in/app/xs-parking/id6758938801";
-export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.xsparking&pcampaignid=web_share";
+export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.xsparking";
+export const PLAY_STORE_APP_URL = "market://details?id=com.xsparking";
 export const ANDROID_DEEP_LINK_URL = "xsparking://";
 
 export const NAV_LINKS = [
