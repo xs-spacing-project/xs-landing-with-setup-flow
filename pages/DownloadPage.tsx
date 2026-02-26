@@ -1,11 +1,15 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { APP_STORE_URL, PLAY_STORE_URL } from "../constants";
+import { ANDROID_DEEP_LINK_URL, APP_STORE_URL, PLAY_STORE_URL } from "../constants";
 
 type Platform = "ios" | "android" | "desktop";
 
 const detectPlatform = (): Platform => {
+  if (typeof navigator === "undefined") {
+    return "desktop";
+  }
+
   const userAgent = navigator.userAgent.toLowerCase();
   
   if (/iphone|ipad|ipod/.test(userAgent)) {
@@ -25,13 +29,41 @@ const DownloadPage: React.FC = () => {
   useEffect(() => {
     if (platform === "desktop") return;
 
-    const redirectUrl = platform === "ios" ? APP_STORE_URL : PLAY_STORE_URL;
-    
-    const timer = setTimeout(() => {
-      window.location.href = redirectUrl;
+    let fallbackTimer: number | null = null;
+
+    const onVisibilityChange = () => {
+      if (document.hidden && fallbackTimer !== null) {
+        window.clearTimeout(fallbackTimer);
+        fallbackTimer = null;
+        document.removeEventListener("visibilitychange", onVisibilityChange);
+      }
+    };
+
+    const redirectTimer = window.setTimeout(() => {
+      if (platform === "ios") {
+        window.location.href = APP_STORE_URL;
+        return;
+      }
+
+      fallbackTimer = window.setTimeout(() => {
+        if (!document.hidden) {
+          window.location.href = PLAY_STORE_URL;
+        }
+        fallbackTimer = null;
+        document.removeEventListener("visibilitychange", onVisibilityChange);
+      }, 1500);
+
+      document.addEventListener("visibilitychange", onVisibilityChange);
+      window.location.href = ANDROID_DEEP_LINK_URL;
     }, 2000);
 
-    return () => clearTimeout(timer);
+    return () => {
+      window.clearTimeout(redirectTimer);
+      if (fallbackTimer !== null) {
+        window.clearTimeout(fallbackTimer);
+      }
+      document.removeEventListener("visibilitychange", onVisibilityChange);
+    };
   }, [platform]);
 
   return (
