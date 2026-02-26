@@ -1,5 +1,5 @@
 import React, { useState, useEffect, createContext, useContext } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import LandingPage from "./pages/LandingPage";
@@ -35,6 +35,7 @@ export const useTheme = () => {
 const App: React.FC = () => {
   const [theme, setTheme] = useState<Theme>("dark");
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme") as Theme | null;
@@ -53,6 +54,13 @@ const App: React.FC = () => {
     }
     localStorage.setItem("theme", theme);
   }, [theme]);
+
+  useEffect(() => {
+    // Support legacy hash-based URLs like `#/download`.
+    if (location.hash.startsWith("#/")) {
+      navigate(location.hash.slice(1), { replace: true });
+    }
+  }, [location.hash, navigate]);
 
   useEffect(() => {
     if (location.hash) {
