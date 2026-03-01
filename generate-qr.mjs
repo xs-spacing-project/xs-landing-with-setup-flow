@@ -10,7 +10,7 @@ const BRAND_ACCENT = '#1C5BFF';
 const BRAND_DARK = '#0A0C10';
 const BRAND_LIGHT = '#F5F5F7';
 
-const URL = 'https://xs-parking.com/#/download';
+const URL = 'https://xs-parking.com/download';
 const OUTPUT_DIR = path.join(__dirname, 'public');
 
 async function generateLogo(size) {
