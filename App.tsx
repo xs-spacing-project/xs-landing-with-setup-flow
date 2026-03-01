@@ -14,6 +14,7 @@ import {
   RefundAndCancellationPolicyPage,
 } from "./pages/StaticPages";
 import DownloadModal from "./components/DownloadModal";
+import DownloadPage from "./pages/DownloadPage";
 
 type Theme = "light" | "dark";
 
@@ -90,6 +91,7 @@ const App: React.FC = () => {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/download" element={<DownloadPage />} />
 
             <Route path="/setup-parking" element={<SetupParkingPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
