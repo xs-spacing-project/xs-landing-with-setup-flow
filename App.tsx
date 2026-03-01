@@ -15,6 +15,7 @@ import {
 } from "./pages/StaticPages";
 import DownloadModal from "./components/DownloadModal";
 import DownloadPage from "./pages/DownloadPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 type Theme = "light" | "dark";
 
@@ -101,6 +102,7 @@ const App: React.FC = () => {
             <Route path="/terms-of-use" element={<TermsOfUsePage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/delete-account" element={<DeleteAccountPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
         <Footer />
