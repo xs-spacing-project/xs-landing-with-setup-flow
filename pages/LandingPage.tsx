@@ -608,7 +608,7 @@ const LocationsSection: React.FC = () => {
 
 const AppPreviewSection: React.FC = () => {
   return (
-    <section className="py-20 sm:py-32" id="locations">
+    <section className="py-20 sm:py-32">
       <div className="max-w-7xl mx-auto px-4">
         <MotionDiv
           initial="hidden"

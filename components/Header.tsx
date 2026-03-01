@@ -25,15 +25,12 @@ const Header: React.FC<HeaderProps> = ({ isLandingPage, onDownloadClick }) => {
         );
         let currentSection = NAV_LINKS[0].href;
 
-        sections.forEach((section) => {
+        sections.forEach((section, index) => {
           if (section) {
             const rect = section.getBoundingClientRect();
-            // Section is in the middle of the viewport
-            if (
-              rect.top <= window.innerHeight / 2 &&
-              rect.bottom >= window.innerHeight / 2
-            ) {
-              currentSection = `#${section.id}`;
+            // Keep the last section whose top has scrolled past the midpoint
+            if (rect.top <= window.innerHeight / 2) {
+              currentSection = NAV_LINKS[index].href;
             }
           }
         });
