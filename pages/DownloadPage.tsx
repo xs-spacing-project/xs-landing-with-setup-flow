@@ -96,7 +96,7 @@ const DownloadPage: React.FC = () => {
         className="text-center px-6"
       >
         <Link to="/" className="inline-block mb-8">
-          <span className="text-4xl font-extrabold italic text-brand-dark dark:text-brand-light">
+          <span className="text-4xl tracking-tight font-extrabold italic text-brand-dark dark:text-brand-light">
             Xs
           </span>
         </Link>

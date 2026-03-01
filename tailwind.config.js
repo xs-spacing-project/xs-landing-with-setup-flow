@@ -15,8 +15,8 @@ export default {
       colors: {
         'brand-dark': '#0A0C10',
         'brand-light': '#F5F5F7',
-        'brand-accent': '#1C5BFF',
-        'brand-accent-hover': '#1c5bffb3',
+        'brand-accent': '#FF9933',
+        'brand-accent-hover': '#B36914',
         'brand-secondary': '#A1A1AA',
       },
       animation: {

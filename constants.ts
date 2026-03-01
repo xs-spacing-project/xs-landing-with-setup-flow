@@ -6,6 +6,7 @@ export const ANDROID_DEEP_LINK_URL = "xsparking://";
 export const NAV_LINKS = [
   { href: '#features', label: 'Features' },
   { href: '#how-it-works', label: 'How It Works' },
+  { href: '#locations', label: 'Locations' },
   { href: '#about', label: 'About' },
   { href: '#testimonials', label: 'Testimonials' },
   { href: '#faq', label: 'FAQ' },
@@ -13,25 +14,25 @@ export const NAV_LINKS = [
 
 export const TESTIMONIALS = [
   {
-    name: 'Anjali Sharma',
-    location: 'Varanasi',
-    quote: 'Finding parking during festival season was a nightmare. With Xs, I booked a spot near Kashi Vishwanath Temple in minutes. A true lifesaver!',
+    name: 'Rajesh Agarwal',
+    location: 'Khatu Shyam Ji',
+    quote: 'Visiting Khatu Shyam Ji during Ekadashi used to mean hours of searching for parking. With Xs, I pre-booked my spot and walked straight to the temple. Absolutely brilliant!',
     rating: 5,
-    image: 'https://picsum.photos/100/100?random=1', // Alternative: '/images/user1.png'
+    image: 'https://picsum.photos/100/100?random=1',
   },
   {
-    name: 'David Chen',
-    location: 'Amritsar',
-    quote: 'The map view is incredibly accurate. I could see the closest and least crowded parking lots near the Golden Temple. The rush prediction is genius.',
+    name: 'Sunita Devi',
+    location: 'Khatu Shyam Ji',
+    quote: 'The rush prediction feature told us exactly when the crowd would peak at Khatu Shyam. We planned our visit perfectly and had a peaceful darshan. Thank you Xs!',
     rating: 5,
-    image: 'https://picsum.photos/100/100?random=2', // Alternative: '/images/user2.png'
+    image: 'https://picsum.photos/100/100?random=2',
   },
   {
-    name: 'Priya Patel',
-    location: 'Tirupati',
-    quote: 'Pre-booking my parking spot for our Tirumala visit saved us so much time and stress. The process was seamless and the prepaid option was very convenient.',
-    rating: 4,
-    image: 'https://picsum.photos/100/100?random=3', // Alternative: '/images/user3.png'
+    name: 'Vikram Singh',
+    location: 'Khatu Shyam Ji',
+    quote: 'We drove from Jaipur for the Falgun Mela and parking was sorted before we even left home. The map showed us the closest lot to the mandir. Super convenient and affordable.',
+    rating: 5,
+    image: 'https://picsum.photos/100/100?random=3',
   },
 ];
 
@@ -53,7 +54,7 @@ export const FAQ_ITEMS = [
     answer: 'Most of our parking partners offer a grace period for arrivals. This can vary by location. We recommend checking the specific details of your booked parking spot in the app.',
   },
     {
-    question: 'Is Xs available in my city?',
-    answer: 'We are rapidly expanding! Currently, we are live in major pilgrimage centers. You can check the app for a complete list of cities and religious places we cover. We are adding new locations every month!',
+    question: 'Where is Xs currently available?',
+    answer: 'Xs is currently live at Khatu Shyam Ji, Rajasthan — one of India\'s most visited pilgrimage sites. We are actively expanding to more religious destinations across India. Stay tuned for updates!',
   },
 ];

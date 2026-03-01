@@ -13,7 +13,7 @@ import {
   DeleteAccountPage,
   RefundAndCancellationPolicyPage,
 } from "./pages/StaticPages";
-import DownloadPage from "./pages/DownloadPage";
+import DownloadModal from "./components/DownloadModal";
 
 type Theme = "light" | "dark";
 
@@ -78,17 +78,19 @@ const App: React.FC = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
+  const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
+
   const isLandingPage = location.pathname === "/";
   const isSetupPage = location.pathname === "/setup-parking";
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="flex flex-col min-h-screen font-sans">
-        {!isSetupPage && <Header isLandingPage={isLandingPage} />}
+        {!isSetupPage && <Header isLandingPage={isLandingPage} onDownloadClick={() => setIsDownloadModalOpen(true)} />}
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<LandingPage />} />
-            <Route path="/download" element={<DownloadPage />} />
+
             <Route path="/setup-parking" element={<SetupParkingPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/privacy-policy-detailed" element={<PrivacyPolicyDetailedPage />} />
@@ -100,6 +102,10 @@ const App: React.FC = () => {
           </Routes>
         </main>
         <Footer />
+        <DownloadModal
+          isOpen={isDownloadModalOpen}
+          onClose={() => setIsDownloadModalOpen(false)}
+        />
       </div>
     </ThemeContext.Provider>
   );

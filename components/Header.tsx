@@ -7,9 +7,10 @@ import { Link } from "react-router-dom";
 
 interface HeaderProps {
   isLandingPage: boolean;
+  onDownloadClick: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ isLandingPage }) => {
+const Header: React.FC<HeaderProps> = ({ isLandingPage, onDownloadClick }) => {
   const [activeSection, setActiveSection] = useState(NAV_LINKS[0].href);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -71,7 +72,7 @@ const Header: React.FC<HeaderProps> = ({ isLandingPage }) => {
               className="flex items-center justify-center px-6 py-1.5"
             >
               {/* Using a standard font to approximate 'Atlyp BL Extra Bold Italic' */}
-              <span className="text-2xl py-[2px] font-extrabold italic text-brand-dark dark:text-brand-light">
+              <span className="text-2xl py-[2px] tracking-tight font-extrabold italic text-brand-dark dark:text-brand-light">
                 Xs
               </span>
             </Link>
@@ -148,13 +149,13 @@ const Header: React.FC<HeaderProps> = ({ isLandingPage }) => {
               </button>
             )}
 
-            <Link
-              to="/download"
+            <button
+              onClick={onDownloadClick}
               className="flex items-center sm:space-x-2 bg-brand-accent hover:bg-brand-accent-hover text-white text-sm font-semibold p-2 sm:px-4 sm:py-1.5 rounded-full transition-colors"
             >
               <Download size={16} />
               <span className="hidden sm:inline">Download</span>
-            </Link>
+            </button>
           </div>
         </div>
       </motion.header>
@@ -169,7 +170,7 @@ const Header: React.FC<HeaderProps> = ({ isLandingPage }) => {
             className="fixed inset-0 bg-brand-light dark:bg-brand-dark z-[100] p-6 flex flex-col"
           >
             <div className="flex justify-between items-center">
-              <span className="text-2xl font-extrabold italic text-brand-dark dark:text-brand-light">
+              <span className="text-2xl tracking-tight font-extrabold italic text-brand-dark dark:text-brand-light">
                 Xs
               </span>
               <button

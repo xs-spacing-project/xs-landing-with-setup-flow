@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1">
-            <h2 className="text-3xl font-extrabold italic text-white">Xs</h2>
+            <h2 className="text-3xl tracking-tight font-extrabold italic text-white">Xs</h2>
             <p className="mt-2 text-sm text-brand-secondary">
               Parking, Solved.
             </p>
